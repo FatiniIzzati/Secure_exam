@@ -1,0 +1,132 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container Box */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Container */
+.container:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* User Sections */
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* User Card Design */
+.user-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-top: 5px solid transparent;
+}
+
+/* Hover Effect for Cards */
+.user-card:hover {
+    transform: scale(1.07);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings */
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    margin: 10px auto;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Green Register Button */
+.btn.register {
+    background: #28a745;
+}
+
+.btn.register:hover {
+    background: #1e7e34;
+}
+
+/* Back Button */
+.btn.back {
+    background: #6c757d;
+}
+
+.btn.back:hover {
+    background: #545b62;
+}
+
+/* Colors for Different User Types */
+.student {
+    border-top: 5px solid #007bff;
+}
+
+.lecturer {
+    border-top: 5px solid #28a745;
+}
+
+.admin {
+    border-top: 5px solid #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .user-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-card {
+        width: 90%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+}
